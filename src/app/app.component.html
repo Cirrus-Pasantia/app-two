@@ -1,13 +1,14 @@
 <style>
+  .container {
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+  }
   h1 {
     color: white;
-    background: blue;
-  }
-  img {
-    width: 500px;
   }
 </style>
 <div class="container">
-  <h1>{{ team }}</h1>
-  <img src="http://1000marcas.net/wp-content/uploads/2020/03/Chelsea-Logo-1953.jpg" alt="team">
+  <h1>{{ name }}</h1>
+  <img [src]="imageUrl" width="300" alt="team">
 </div>
